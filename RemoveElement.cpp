@@ -16,7 +16,7 @@ int removeElement(vector<int> &nums, int val)
         if (nums[k] == val)
         {
 
-            if (nums[end] == val)
+            if (nums[end] == val && k != end)
             {
                 nums[end] = 255;
                 end--;
